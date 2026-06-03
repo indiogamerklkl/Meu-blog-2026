@@ -32,7 +32,7 @@
         /* Estiliza cada bloco de post do blog */
         article {
             display: flex;             /* Define o layout flexbox para alinhar os itens (imagem e texto) lado a lado */
-        }
+        }images.jpegimages.jpeg
 
 
         /* Estiliza as imagens dos artigos */
@@ -72,8 +72,8 @@
             </div>
         </article>
        
-        <article> <!-- Segundo artigo do blog -->
-            <img src="imagem-blog.png"
+        <article> <!-- Segundo artigo do blog -->images.jpegimages.jpeg
+            <img src="images.jpeg"
                 alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
             <div>
                 <h2>Meu segundo post</h2>
