@@ -1,49 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog 2026</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: white; padding: 1rem; text-align: center; }
-        .container { display: flex; max-width: 1000px; margin: 20px auto; padding: 10px; }
-        main { flex: 3; background: white; padding: 20px; border-radius: 8px; }
-        aside { flex: 1; margin-left: 20px; background: #ddd; padding: 15px; border-radius: 8px; height: fit-content; }
-        article { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
-        h2 { color: #333; }
-        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
-    </style>
+    <title>TechBlog - O Futuro da Tecnologia</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-    <header>
-        <h1>Bem-vindo ao Meu Blog</h1>
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tight">
+                <a href="#">{ Tech<span class="text-blue-200">Blog</span> }</a>
+            </h1>
+            <nav class="space-x-4">
+                <a href="#" class="hover:text-blue-200 transition">Início</a>
+                <a href="#" class="hover:text-blue-200 transition">Artigos</a>
+                <a href="#" class="hover:text-blue-200 transition">Sobre</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <main>
-            <article>
-                <h2>Minha Primeira Postagem</h2>
-                <p>Publicado em 27 de Maio de 2026</p>
-                <p>Este é o conteúdo do meu primeiro post no blog criado diretamente pelo GitHub!</p>
+    <main class="container mx-auto px-4 py-12 max-w-6xl">
+        
+        <section class="bg-white rounded-2xl shadow-sm p-8 mb-12 border border-gray-100 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Destaque</span>
+                <h2 class="text-3xl font-bold mt-3 mb-4 text-gray-800">O Impacto da Inteligência Artificial em 2026</h2>
+                <p class="text-gray-600 mb-6">A IA deixou de ser apenas uma ferramenta assistencial e passou a coreografia de ecossistemas autônomos. Entenda como isso muda o desenvolvimento de software.</p>
+                <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition">Ler Artigo Completo</a>
+            </div>
+            <div class="md:w-1/2 bg-gradient-to-br from-blue-500 to-indigo-600 h-64 w-full rounded-xl flex items-center justify-center text-white text-lg font-mono">
+                [ [IA & Dev] ]
+            </div>
+        </section>
+
+        <h3 class="text-2xl font-bold mb-6 text-gray-800">Últimas Publicações</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <article class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col">
+                <div class="h-48 bg-emerald-500 flex items-center justify-center text-white font-mono text-xl">
+                    &lt;Vue vs React&gt;
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-emerald-600 text-xs font-bold uppercase tracking-wider">Desenvolvimento</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3 text-gray-800 hover:text-blue-600 cursor-pointer">Qual framework escolher em 2026?</h4>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Uma análise sincera sobre performance, mercado de trabalho e ecossistema das ferramentas web mais famosas.</p>
+                    <span class="text-xs text-gray-400">10 de Junho, 2026</span>
+                </div>
             </article>
 
-            <article>
-                <h2>Dicas de HTML</h2>
-                <p>Publicado em 26 de Maio de 2026</p>
-                <p>HTML é a base da web. Começar um blog assim é o primeiro passo para aprender desenvolvimento.</p>
+            <article class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col">
+                <div class="h-48 bg-purple-500 flex items-center justify-center text-white font-mono text-xl">
+                    { Cloud Computing }
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-purple-600 text-xs font-bold uppercase tracking-wider">Infraestrutura</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3 text-gray-800 hover:text-blue-600 cursor-pointer">Arquitetura Serverless Sem Mistérios</h4>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Descubra como reduzir custos e escalar sua aplicação sem precisar gerenciar um único servidor de fundo.</p>
+                    <span class="text-xs text-gray-400">08 de Junho, 2026</span>
+                </div>
             </article>
-        </main>
 
-        <aside>
-            <h3>Sobre mim</h3>
-            <p>Olá! Sou o dono deste blog e aqui compartilho minhas ideias.</p>
-        </aside>
-    </div>
+            <article class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col">
+                <div class="h-48 bg-amber-500 flex items-center justify-center text-white font-mono text-xl">
+                    ( Cyber Security )
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-amber-600 text-xs font-bold uppercase tracking-wider">Segurança</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3 text-gray-800 hover:text-blue-600 cursor-pointer">Protegendo suas APIs de Ataques</h4>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Dicas essenciais de segurança e boas práticas para evitar vazamento de dados sensíveis na sua aplicação.</p>
+                    <span class="text-xs text-gray-400">05 de Junho, 2026</span>
+                </div>
+            </article>
 
-    <footer>
-        <p>&copy; 2026 Meu-blog-2026</p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2026 TechBlog. Desenvolvido com HTML e Tailwind CSS.</p>
+            <p class="text-xs mt-2 text-gray-600">Hospedado orgulhosamente no GitHub Pages.</p>
+        </div>
     </footer>
 
 </body>
